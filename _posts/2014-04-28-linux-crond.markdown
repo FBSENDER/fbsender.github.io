@@ -7,15 +7,13 @@ categories: linux
 
 linux crond服务简介：
 定时执行系统命令
-
-
 查看crond服务状态：
 [root@www ~]# /sbin/service crond status
-
 启动、停止、重启crond服务：
 [root@www ~]# /sbin/service crond start
 [root@www ~]# /sbin/service crond stop
 [root@www ~]# /sbin/service crond restart
+
 
 系统启动自动启动crond服务，在/etc/rc.d/rc.local文件中加一行：
 /sbin/service crond start

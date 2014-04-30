@@ -9,11 +9,11 @@ categories: linux
 参考：http://badgerports.org/lucid.html
 先执行：apt-key adv --keyserver keyserver.ubuntu.com --recv 0E1FAD0C，添加源的key
 然后编辑文件/etc/apt/sources.list，在其中添加一行“deb http://badgerports.org lucid main“，就是网址中提到的软件源地址，最后需要执行apt-get update刷新缓存中的数据，
-
 安装apache：
 apt-get install apache2
 启动：
 service apache2 start/stop/restart
+
  
 安装mono-xsp4
 因为apt-get软件源不包含mono源，所以直接apt-get获取不到mono-xsp4包，首先需要添加源：

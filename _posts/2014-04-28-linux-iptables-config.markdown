@@ -6,10 +6,10 @@ categories: linux
 ---
 
 linux下IPTABLES配置详解
-
 如果你的IPTABLES基础知识还不了解,建议先去看看.
 开始配置
 我们来配置一个filter表的防火墙.
+
 (1)查看本机关于IPTABLES的设置情况
 [root@tp ~]# iptables -L -n
 Chain INPUT (policy ACCEPT)

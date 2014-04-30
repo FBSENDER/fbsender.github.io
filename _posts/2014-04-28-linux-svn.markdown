@@ -18,8 +18,7 @@ The following repository back-end (FS) modules are available:
  
 * fs_base : Module for working with a Berkeley DB repository.
 * fs_fs : Module for working with a plain file (FSFS) repository.
- 
- 
+
 2.2 创建SVN 版本库
 [root@singledb ~]# mkdir /u02/svn
 [root@singledb ~]# svnadmin create /u02/svn/davesvn  --davesvn为版本库名称

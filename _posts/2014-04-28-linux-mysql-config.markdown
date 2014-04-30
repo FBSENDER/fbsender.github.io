@@ -19,6 +19,7 @@ apt-get install mysql-client
 登录语法：
 mysql -u [username] -h[host] -p[password] dbname
 
+
 MySql几个重要的目录：
 数据库目录：/var/lib/mysql
 配置文件目录：/usr/share/mysql

@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: fbsender's blog
 markdown: redcarpet
 pygments: true
+encoding: utf-8

@@ -6,10 +6,10 @@ categories: linux
 ---
 
 How To Setup Your Own VPN With PPTP
-
 inShare
 Intro
 One of the commonly asked questions from our users is how to add another IP address to their server. You can assign your own private IP address to your droplet by creating a VPN tunnel. Whether you want to build your own Virtual Private Network (VPN), or assign an SSL certificate to that IP address, you have several options. From all of the possible options, the most optimal ones are between PPTP and OpenVPN. A Point-To-Point Tunneling Protocol (PPTP) allows you to implement your own VPN very quickly, and is compatible with most mobile devices. Even though PPTP is less secure than OpenVPN, it is also faster and uses less CPU resources.
+
 Step 1 - PPTP Installation
 You will have to select one server to be responsible for handling out IPs to others and authenticating all of your servers into your VPN. This will become your PPTP Server.
 On CentOS 6 x64:

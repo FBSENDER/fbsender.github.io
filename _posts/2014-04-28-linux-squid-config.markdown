@@ -6,7 +6,6 @@ categories: linux
 ---
 
 1、什么是Squid
-
 Squid是一个高性能的代理缓存服务器，Squid支持FTP、gopher和HTTP协议。和一般的代理缓存软件不同，Squid用一个单独的、非模块化的、I/O驱动的进程来处理所有的客户端请求。
 
 Squid将数据元缓存在内存中，同时也缓存DNS查询的结果，除此之外，它还支持非模块化的DNS查询，对失败的请求进行消极缓存。Squid支持SSL，支持访问控制。由于使用了ICP（轻量Internet缓存协议），Squid能够实现层叠的代理阵列，从而最大限度地节约带宽。
