@@ -1,6 +1,6 @@
 name: fbsender's blog
 markdown: redcarpet
-pygments: true
 ecoding: utf-8
+highlighter: pygments
 
 baseurl: http://fbsender.github.io
