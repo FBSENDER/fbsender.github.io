@@ -6,38 +6,38 @@ layout: nil
 
   {% for post in site.posts %}
   <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
+    <loc>{{ site.baseurl }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   {% endfor %}
   <url>
-    <loc>{{ site.url }}/git_index.html</loc>
+    <loc>{{ site.baseurl }}/git_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/seo_index.html</loc>
+    <loc>{{ site.baseurl }}/seo_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/sem_index.html</loc>
+    <loc>{{ site.baseurl }}/sem_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/ruby_index.html</loc>
+    <loc>{{ site.baseurl }}/ruby_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/linux_index.html</loc>
+    <loc>{{ site.baseurl }}/linux_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
