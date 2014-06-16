@@ -13,31 +13,31 @@ layout: nil
   </url>
   {% endfor %}
   <url>
-    <loc>{{ site.url }}git_index.html</loc>
+    <loc>{{ site.url }}/git_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}seo_index.html</loc>
+    <loc>{{ site.url }}/seo_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}sem_index.html</loc>
+    <loc>{{ site.url }}/sem_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}ruby_index.html</loc>
+    <loc>{{ site.url }}/ruby_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}linux_index.html</loc>
+    <loc>{{ site.url }}/linux_index.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
