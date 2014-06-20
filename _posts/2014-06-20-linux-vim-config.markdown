@@ -30,6 +30,7 @@ vim插件管理：[pathogen](https://github.com/tpope/vim-pathogen)
     
 ## .vimrc 配置
 配置家目录下的.vimrc文件（没有需新建）
+
 ```bash
 set fenc=gbk
 set guifont=Monaco:h10       " 适合Ruby开发的字体 && 字号
@@ -72,5 +73,4 @@ let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-1.9'
 let g:user_emmet_mode='a'
-
 ```
