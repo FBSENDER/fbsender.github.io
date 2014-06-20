@@ -7,11 +7,11 @@ date: 2014-06-20
 
 ## rails vim 使用的插件
 vim插件管理：[pathogen](https://github.com/tpope/vim-pathogen)
-在其管理下使用到的一些插件：
-1. 目录跳转 [The Nerd Tree](https://github.com/vim-scripts/The-NERD-tree)
-2. html编辑器 [emmet-vim](https://github.com/mattn/emmet-vim)
-3. rails.vim [vim-rails](https://github.com/tpope/vim-rails)
-4. 配色方案 [vim-color](https://github.com/altercation/vim-colors-solarized)
+在其管理下使用到的一些插件：   
+1. 目录跳转 [The Nerd Tree](https://github.com/vim-scripts/The-NERD-tree)   
+2. html编辑器 [emmet-vim](https://github.com/mattn/emmet-vim)   
+3. rails.vim [vim-rails](https://github.com/tpope/vim-rails)   
+4. 配色方案 [vim-color](https://github.com/altercation/vim-colors-solarized)   
 
 ## .vim 文件夹目录结构
 .   
