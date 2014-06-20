@@ -16,7 +16,8 @@ vim插件管理：[pathogen](https://github.com/tpope/vim-pathogen)
 ## .vim 文件夹目录结构
 .   
 >autoload   
->>pathogen.vim   
+>>pathogen.vim 
+
 >bundle    
 >>emmet-vim   
 >>The-NERD-tree   
