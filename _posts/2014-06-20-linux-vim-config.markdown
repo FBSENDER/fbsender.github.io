@@ -14,19 +14,19 @@ vim插件管理：[pathogen](https://github.com/tpope/vim-pathogen)
 4. 配色方案 [vim-color](https://github.com/altercation/vim-colors-solarized)
 
 ## .vim 文件夹目录结构
->.
->├── autoload   
->│   └── pathogen.vim   
->└── bundle   
->    ├── emmet-vim
->    ├── The-NERD-tree
->    ├── tlib_vim
->    ├── vim-addon-mw-utils
->    ├── vim-bundler
->    ├── vim-colors-solarized
->    ├── vim-rails
->    ├── vim-snipmate
->    └── vim-snippets
+.   
+├── autoload   
+│   └── pathogen.vim   
+└── bundle    
+    ├── emmet-vim   
+    ├── The-NERD-tree   
+    ├── tlib_vim   
+    ├── vim-addon-mw-utils   
+    ├── vim-bundler   
+    ├── vim-colors-solarized   
+    ├── vim-rails   
+    ├── vim-snipmate   
+    └── vim-snippets   
     
 ## .vimrc 配置
 配置家目录下的.vimrc文件（没有需新建）
