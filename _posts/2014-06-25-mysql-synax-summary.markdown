@@ -4,9 +4,6 @@ title: "Mysql 常用函数"
 categories: mysql
 date: 2014-06-25
 ---
-
-**MariaDB**
-
 ##mysql 字符串左侧补零
 city_id 定长4位数字   
 region_id 定长8位数字  
@@ -55,6 +52,6 @@ select concat('a','b','1','2'); > 'ab12'
 select concat('123a','a1','2b3');   > '123aa12b3'
 ```
 
-
+测试环境 MariaDB
 
 
