@@ -53,6 +53,17 @@ select concat('a','b','1','2'); > 'ab12'
 select concat('123a','a1','2b3');   > '123aa12b3'
 ```
 
+##mysql 字符串替换
+使用 replace() 函数操作字符串替换   
+
+```sql
+set @s1 = 'abcabcabc';
+set @s1 = replace(@s1,'a','dd');
+select @s1;
+
+>'ddbcddbcddbc'
+```
+
 测试环境 MariaDB
 
 
