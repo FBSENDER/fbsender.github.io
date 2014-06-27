@@ -18,6 +18,7 @@ set
 
 ##显示一个环境变量
 bash下需显示一个环境变量，比如说"HOME"   
+
 ```bash
 echo $HOME
 
@@ -33,7 +34,9 @@ env | grep ^HOME
 ```bash
 export LMCENV=123
 ```
-查看
+
+查看   
+
 ```bash
 echo $LMCENV
 
