@@ -71,12 +71,15 @@ echo $LMCENV
 >123
 ```
 尝试修改该环境变量LMCENV      
+
 ```bash
 LMCENV=321
 
 >read-only variable: LMCENV
 ```
+
 尝试删除该环境变量LMCENV   
+
 ```bash
 unset LMCENV
 
