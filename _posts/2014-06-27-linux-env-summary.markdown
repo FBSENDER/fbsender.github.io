@@ -52,11 +52,13 @@ echo $LMCENV
 ```bash
 unset LMCENV
 ```
+
 再次查看   
+
 ```bash
 echo $LMCENV
 
->
+>（神马都没有）
 ```
 删除成功
 
