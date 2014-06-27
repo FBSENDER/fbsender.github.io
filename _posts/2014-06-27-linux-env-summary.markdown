@@ -52,7 +52,7 @@ echo $LMCENV
 ```bash
 unset LMCENV
 ```
-再次查看
+再次查看   
 ```bash
 echo $LMCENV
 
