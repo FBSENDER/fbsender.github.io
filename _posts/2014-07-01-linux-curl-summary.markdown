@@ -6,21 +6,21 @@ date: 2014-07-01
 ---
 ##ubuntu 安装 curl
 ```bash   
-sudo apt-get install curl
+sudo apt-get install curl   
 ```
 
 ##获取网页html
 查看vxixi.com首页的html   
-```bash
-curl http://vxixi.com
+```bash   
+curl http://vxixi.com   
 ```
 然后在标准输出内就可以看到html被输出了   
 
 ##curl几个常用的参数选项
 ###curl -o
-把vxixi.com的内容存到本地文件vxixi_page.html   
-```bash
-curl -o vxixi_page.html http://vxixi.com
+把vxixi.com的内容存到本地文件vxixi_page.html     
+```bash  
+curl -o vxixi_page.html http://vxixi.com    
 ```
 ###curl --help
 ```bash
