@@ -13,3 +13,17 @@ Rails已掌握与尚需学习实践的知识点
 * 数据库学习是一个方面，对于这个Gem来讲，尚需学习的是表连接与magraion。
 * 现在建表与表修改都是在直接写数据库脚本。
 * 涉及到多表查询使用find-by-sql 或直接 excute
+
+## 2.MVC & RestFul
+
+## 3.Route
+
+## 4.css js => less coffee-script
+
+## 5.部署 linux的使用 自动部署工具 rake task...
+
+## 6.测试 rspec 前台与后台测测试
+
+## 7.性能优化 
+* 缓存 memcache redis
+* 负载均衡
