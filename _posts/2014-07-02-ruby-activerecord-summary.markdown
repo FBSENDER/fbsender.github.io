@@ -34,7 +34,7 @@ puts Post.table_name    #posts
 ```
 
 ## 定义一个类 继承于ActiveRecord::Base
-数据库内按照业务逻辑拆表，表内各个字段名一致，表名不同:
+数据库内按照业务逻辑拆表，表内各个字段名一致，表名不同:    
 beijing\_keywords   
 shanghai\_keyowrds   
 guangzhou\_keywords   
