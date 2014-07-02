@@ -51,3 +51,41 @@ puts keyword_class.table_name   #beijing_keywords
 p keyword_class.take            #beijing_keywords first record 
 ```
 
+## ActiveRecord Association
+有下面两套表：   
+beijing\_keywords   
+shanghai\_keyowrds   
+guangzhou\_keywords    
+beijing\_adgroups    
+shanghai\_adgroups     
+guangzhou\_adgroups    
+keyword与adgroup是1-n的关系   
+
+```ruby
+class Keyword < ActiveRecord::Base
+    belongs_to :adgroup
+    def self.config(city_name)
+        self.table_name = "#{city_name}_keywords"
+        self
+    end
+end
+class Adgroup < ActiveRecord::Base
+    has_many :keywords
+    def self.config(city_name)
+        self.table_name = "#{city_name}_keywords"
+        self
+    end
+end
+
+city_name = "beijing"
+keyword_class = Keyword.config(city_name)
+adgroup_class = Adgroup.config(city_name)
+#根据adgroup的一个字段adgroup_name = "hello"查询keywords
+keyword_class.joins(:adgroup).where("#{adgroup_class.table_name}.adgroup_name" => "hello" )
+#获取id = 1的keyword对应的adgroup
+keyword = keyword_class.find(1)
+keyword.adgroup
+#获取id = 10的 adgroup 对应的 keywords
+adgroup = adgroup_class.find(10)
+adgroup.keywords
+```
