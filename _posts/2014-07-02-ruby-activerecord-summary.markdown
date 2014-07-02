@@ -38,6 +38,7 @@ puts Post.table_name    #posts
 beijing_keywords   
 shanghai_keyowrds   
 guangzhou_keywords   
+
 ```ruby
 class Keyword < ActiveRecord::Base
     def self.config(city_name)
