@@ -9,7 +9,7 @@ date: 2014-07-27 17:00
 ```bash      
 curl -L https://get.rvm.io | bash -s stable      
 ```
-2. 在家目录.bashrc下面加入这样一段代码，打开新的terminal就不用再次键入相同的指令了
+2. 在家目录.bashrc下面加入这样一段代码，打开新的terminal就不用再次键入相同的指令了    
 ```bash     
 source ~/.rvm/scripts/rvm
 ```     
@@ -25,7 +25,7 @@ rvm install 2.1.1
 6. 验证ruby是否安装成功    
 ```bash
 ruby -v
-```
+```     
 ```bash
 ruby 2.1.1p76 (2014-02-24 revision 45161) [i686-linux]
 ```
