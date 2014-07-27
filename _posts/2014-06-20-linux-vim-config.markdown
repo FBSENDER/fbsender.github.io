@@ -12,6 +12,7 @@ vim插件管理：[pathogen](https://github.com/tpope/vim-pathogen)
 2. html编辑器 [emmet-vim](https://github.com/mattn/emmet-vim)   
 3. rails.vim [vim-rails](https://github.com/tpope/vim-rails)   
 4. 配色方案 [vim-color](https://github.com/altercation/vim-colors-solarized)   
+5. 代码自动补全 [vim-snipmate](https://github.com/garbas/vim-snipmate)     
 
 ## .vim 文件夹目录结构
 .   
