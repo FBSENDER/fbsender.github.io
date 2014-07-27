@@ -6,11 +6,11 @@ date: 2014-07-27 17:00
 ---
 ## 使用rvm安装ruby
 1. 安装rvm     
-```bash      
+```bash    
 curl -L https://get.rvm.io | bash -s stable      
 ```
 2. 在家目录.bashrc下面加入这样一段代码，打开新的terminal就不用再次键入相同的指令了    
-```bash     
+```bash  
 source ~/.rvm/scripts/rvm
 ```     
 3. 检查是否安装正确，先重新打开一个terminal，输入irb，irb可用说明rvm安装成功了
