@@ -4,6 +4,12 @@ title: "ActiveRecord 使用技巧"
 categories: ruby
 date: 2014-07-02 18:00
 ---
+## gem install mysql2
+直接gem install 发生异常，需要先安装mysql开发包，ubuntu下是这样的：
+```
+sudo apt-get install libmysql-ruby libmysqlclient-dev
+```    
+
 ## 脱离rails单独使用ActiveRecord(mysql)
 ```ruby
 require 'mysql2'
