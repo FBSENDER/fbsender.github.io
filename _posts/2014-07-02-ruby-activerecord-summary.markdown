@@ -94,4 +94,15 @@ keyword.adgroup
 #获取id = 10的 adgroup 对应的 keywords
 adgroup = adgroup_class.find(10)
 adgroup.keywords
+```    
+## updated_at 字段自动更新为当前时间
+updated_at    
+updated_on    
+```ruby
+ActiveRecord::Base.record_timestamps = true #开启自动更新updated_at
+ActiveRecord::Base.record_timestamps = false #关闭
+```
+## find_by_sql 传递参数
+```ruby
+Db::Keyword.find_by_sql ["select * from keywords where id > ? and adgroup_id = ?",id,adgroup_id]
 ```
