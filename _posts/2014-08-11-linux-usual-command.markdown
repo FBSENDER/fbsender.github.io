@@ -6,7 +6,7 @@ date: 2014-08-11
 ---
 
 ## cd 目录跳转 change dictionary
-```shell
+```bash
 cd .. #上一层目录
 cd ~ #家目录
 cd #家目录
@@ -21,28 +21,28 @@ rmdir #删除一个空目录
 使用zsh时，目录跳转通常无需输入cd
 
 ## ls 显示目录信息
-```shell
+```bash
 ls -al #显示当前目录下的文件信息
 ```
 
 ## cp 拷贝文件
-```shell
+```bash
 cp file1 file2
 ```
 
 ## scp 远程拷贝
-```shell
+```bash
 scp file1 mc@sem2:file2
 ```
 
 ## rm 删除文件
-```shell
+```bash
 rm file1 #删除文件
 rm -rf /file #删除文件夹及其里面的文件
 ```
 
 ## 查看文件
-```shell
+```bash
 cat file1 #查看文件，输出文件内容到标准输出
 tail file1 #查看文件最后几行
 less file1 #分页浏览文件 可以向上 或向下查看
