@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  'linux 常用指令'
-date:   2014-08-11
+title:  "linux 常用指令"
 categories: linux
+date: 2014-08-11
 ---
+
 ## cd 目录跳转 change dictionary
 ```shell
 cd .. #上一层目录
