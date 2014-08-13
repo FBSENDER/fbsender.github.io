@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "linux 常用指令"
-categories: linux
+title: "linux 常用指令"
+category: linux
 date: 2014-08-11
 ---
 test 
