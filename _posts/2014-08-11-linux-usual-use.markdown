@@ -2,7 +2,7 @@
 layout: post
 title:  "linux 常用指令"
 categories: linux
-date: 2014-08-11
+date: 2014-09-03
 ---
 
 ## cd 目录跳转 change dictionary
@@ -47,4 +47,21 @@ cat file1 #查看文件，输出文件内容到标准输出
 tail file1 #查看文件最后几行
 less file1 #分页浏览文件 可以向上 或向下查看
 more file1 #分页浏览文件
+```
+
+## 解压文件
+```
+gzip -d filename
+```
+
+## curl 下载文件
+```
+curl -o save_as_filename uri
+```
+
+## iconv 文件转码
+gb18030 to utf8       
+-c 忽略无法转换的字符    
+```
+iconv -t utf8 -f gb18030 -c source_file > target_file
 ```
