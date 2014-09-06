@@ -37,5 +37,5 @@ client = soap.createClient(url, options, (err,client) ->
 ## ruby 代码部分
 
 gem install baidu    
-相关gem已由组内同事封装好了，同样还用sogou，qihu360
-然后一切的一切多就都可以搞定了...      
+相关gem已由组内同事封装好了，同样还用sogou，qihu360     
+然后一切的一切就都可以搞定了...      
