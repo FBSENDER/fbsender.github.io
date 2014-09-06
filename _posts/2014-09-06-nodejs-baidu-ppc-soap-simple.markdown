@@ -6,7 +6,7 @@ categories: ruby
 ---
 最近在练习使用coffee script + nodejs写后端代码，一些原由ruby实现的功能尝试使用js实现，下面是调用百度PPC api的例子。
 ## coffee script 代码部分
-```coffee script
+```coffeescript
 soap = require 'soap'
 url = 'https://api.baidu.com/sem/sms/v3/AccountService?wsdl'
 
