@@ -89,7 +89,8 @@ ruby的实现网上已有很多可用示例，前阵子自己也写代码调通�
 ssh user@sshserver -L 127.0.0.1:33333:database_server:3306    
 ```    
 新开一个terminal，输入指令，就是登陆到ssh server，并将本地的33333端口绑定到数据库服务器的3306端口，ssh通道已建立。    
-之后再修改上面代码中的mysql连接配置：
+之后再修改上面代码中的mysql连接配置：    
+
 ```coffeescript
 orm = require 'orm'
 db = orm.connect(
@@ -103,10 +104,12 @@ db = orm.connect(
   password: 'password'
 )
 ```
+
 ### 方法2 使用nodejs coffee script 代码建立ssh 通道
 npm install tunnel-ssh    
 这个nodejs包直接使用有一些问题，于是自己fork下来做了些修正，已发起pull request，应该很快就可以使用了。
 使用这个包的代码如下：    
+
 ```coffeescript
 Tunnel = require "tunnel-ssh"
 
@@ -132,6 +135,7 @@ tunnel.connect((error) ->
 )
 ```
 mysql的配置：    
+
 ```coffeescript
 orm = require 'orm'
 db = orm.connect(
