@@ -85,9 +85,9 @@ db.on('connect',(err) ->
 有时连接数据库需要用到ssh，比如我们在开发过程中个人机器是无法直接连接数据库的，需要先ssh连接一台跳板机，然后通过跳板机来连接数据库。      
 ruby的实现网上已有很多可用示例，前阵子自己也写代码调通了，现在使用nodejs来实现该功能，google了好久，终于也得到了解决。    
 ### 方法1 使用linux自身的ssh command通过跳板机建立ssh通道
-```bash
-ssh user@sshserver -L 127.0.0.1:33333:database_server:3306
-```
+```coffeescript
+ssh user@sshserver -L 127.0.0.1:33333:database_server:3306    
+```    
 新开一个terminal，输入指令，就是登陆到ssh server，并将本地的33333端口绑定到数据库服务器的3306端口，ssh通道已建立。    
 之后再修改上面代码中的mysql连接配置：
 ```coffeescript
