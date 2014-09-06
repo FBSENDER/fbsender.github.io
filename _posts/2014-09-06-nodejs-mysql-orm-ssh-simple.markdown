@@ -79,7 +79,6 @@ db.on('connect',(err) ->
 #关闭数据库连接，需要放在合适的位置
 #如果放在下面一行，还未进行数据查询
 #db.driver.db.end()
- 
 ```
 
 ## mysql orm ssh 示例
@@ -131,7 +130,6 @@ tunnel.connect((error) ->
   #关闭ssh 管道
   tunnel.close();
 )
-
 ```
 mysql的配置：    
 ```coffeescript
