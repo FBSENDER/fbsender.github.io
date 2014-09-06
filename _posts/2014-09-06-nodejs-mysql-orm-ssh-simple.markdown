@@ -7,6 +7,7 @@ categories: ruby
 
 ## nodejs orm 调用示例
 nodejs orm，使用npm 包为 node-orm2，初步使用，无法自动适配mysql中已存在的表的列名，查询得到的数据只能在回调函数中使用，别的都还好，下面是coffee scirpt示例代码：    
+
 ```coffeescript
 orm = require 'orm'
 #mysql 连接配置 方式1
