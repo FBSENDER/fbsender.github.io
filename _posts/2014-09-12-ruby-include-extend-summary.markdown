@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "ruby include extend pretend 使用方法"
-date:   2019-09-11
+date:   2019-09-12
 categories: ruby
 ---
 
 ## include 与 extend
 先说include 和 extend，看下面的一段代码：     
+
 ```ruby
 module A
   def my_method
@@ -30,7 +31,8 @@ end
 2.类方法，首先在类的单件类中找，然后沿着类的单件类的祖先链依次向上找（类的单件类的祖先链 = 类的祖先链的各个节点的单件类组成的链）    
 
 ## ruby prepend
-ruby prepend 与 include 类似，首先都是添加实例方法的，不同的是扩展module在祖先链上的放置位置不同，看下面的代码：    
+ruby prepend 与 include 类似，首先都是添加实例方法的，不同的是扩展module在祖先链上的放置位置不同，看下面的代码：   
+
 ```ruby
 module A
   def my_method
@@ -71,8 +73,10 @@ puts C.ancestors
 #Kernel
 #BasicObject
 ```
+
 ## ActiveSupport::Concern 代码解析
 ActiveSupport::Concern 这个module代码不多，看到相关使用的时候引出了上面的一系列问题，4.1.5版本的代码贴在下面，来逐行解析：    
+
 ```ruby
 module ActiveSupport
   module Concern
@@ -115,7 +119,9 @@ module ActiveSupport
   end
 end
 ```
+
 写了一段代码来清晰的展示ActiveSupport::Concern的执行逻辑：    
+
 ```ruby
 require 'active_support'
 
@@ -153,6 +159,7 @@ end
 #‘in A’
 #‘in B’
 ```
+
 C的祖先链，B A ...      
 B的祖先链中没有A      
 
