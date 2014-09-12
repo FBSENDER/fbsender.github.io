@@ -23,7 +23,7 @@ class C
   extend A
 end
 ```
-这样写之后，B将新增一个实例方法my_method，C将新增一个类方法mymethod，同时，B的祖先链（ancestors）中将增加A，而C的祖先链中没有A。      
+这样写之后，B将新增一个实例方法my_method，C将新增一个类方法my_method，同时，B的祖先链（ancestors）中将增加A，而C的祖先链中没有A。      
 
 
 再谈一下当方法调用时，ruby是如何在祖先链中找到方法定义的：      
@@ -163,7 +163,6 @@ end
 C的祖先链，B A ...      
 B的祖先链中没有A      
 
-自我感觉这部分理解透了，未来尽量应用上~     
 存在疑问：include module，变更对象祖先链是在append_features方法还是在included方法中操作的？或者是别的？
 
 
