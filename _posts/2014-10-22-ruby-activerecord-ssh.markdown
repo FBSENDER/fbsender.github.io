@@ -7,6 +7,7 @@ categories: ruby
 
 由于某些安全策略，有时无法在开发机直连数据库，需要通过一台跳板机来完成。      
 下面的代码可以使ActiveRecord通过配置好的ssh通道连接到指定的MySql数据库。    
+
 ```ruby
 require 'active_record'
 require 'mysql2'
