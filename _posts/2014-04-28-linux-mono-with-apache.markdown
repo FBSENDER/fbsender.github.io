@@ -32,7 +32,7 @@ apt-get install mono-apache-server4，同时会安装很多个包
 MonoAutoApplication enabled，启用自动部署功能；
 ForceType application/x-asp-net，所有请求都是asp.net请求（mvc没有扩展名，所以需要asp.net处理所有请求）
 默认情况下已经使用了Framework 4，见其中的“Include /etc/mono-server4/mono-server4-hosts.conf”文件：
-# Default configuration, don't edit it!
+// Default configuration, don't edit it!
 <IfModule mod_mono.c>
   MonoUnixSocket default /tmp/.mod_mono_server4
   MonoServerPath default /usr/bin/mod-mono-server4
