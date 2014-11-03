@@ -5,9 +5,9 @@ date: 2014-06-19
 categories: ruby
 ---
 
-# ruby thread 使用总结
+## ruby thread 使用总结
 
-## ruby thread 基本用法
+### ruby thread 基本用法
 
 ```ruby
 puts "start"
@@ -39,7 +39,7 @@ puts "end"
 
 **使用 Thread 实例方法 join，进程会等待子线程执行完成后继续向下执行**
 
-## 启用多个子线程
+### 启用多个子线程
 
 一般方式：
 ```ruby
@@ -66,7 +66,7 @@ puts "end"
 ```
 这样会在一个线程结束后再启动下一个线程
 
-## 线程状态
+### 线程状态
 ```ruby
 Thread.current.status
 ```
@@ -85,7 +85,7 @@ When this thread is terminated normally
 nil
 If terminated with an exception.
 
-## 传入参数
+### 传入参数
 
 ```ruby
 Thread.new(:args_1 => 1,:args_2){ |args|
@@ -96,7 +96,7 @@ Thread.new(:args_1 => 1,:args_2){ |args|
 >{:args_1 => 1,:args_2 => 2}
 ```
 
-## 多线程使用ActiveRecord连接池进行查询
+### 多线程使用ActiveRecord连接池进行查询
 ActiveRecord 版本4.1.1
 adaptor： mysql2
 pool： 10
