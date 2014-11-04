@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ruby使用c/cpp扩展_extending ruby with c"
-date:   2019-10-22
+date:   2014-10-22
 categories: ruby
 ---
 最新学习到了ruby的c扩展库，试着自己写了一下，把遇到的坑记下来。    
