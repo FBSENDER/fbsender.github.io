@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "postgresql 安装 配置 常用命令"
-date:   2019-09-07
+date:   2014-09-07
 categories: linux
 ---
 
