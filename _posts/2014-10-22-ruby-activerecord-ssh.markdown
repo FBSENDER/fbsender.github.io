@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "rails ActiveRecord ssh"
-date:   2019-10-27
+date:   2014-10-27
 categories: ruby
 ---
 
