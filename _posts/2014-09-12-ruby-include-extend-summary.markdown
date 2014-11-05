@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ruby include extend pretend 使用方法"
-date:   2019-09-12
+date:   2014-09-12
 categories: ruby
 ---
 
