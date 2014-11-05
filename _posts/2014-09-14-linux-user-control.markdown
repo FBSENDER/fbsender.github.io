@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "linux 用户 用户组 管理"
-date:   2019-09-14
+date:   2014-09-14
 categories: linux
 ---
 
