@@ -17,6 +17,19 @@
         <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
         <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script> 
         <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script>
+	  (function(){
+	    var appid = 'cyrtgRu9y',
+	    conf = 'prod_523a6471049c4f19c1586aab3dda2933';
+	    var doc = document,
+	    s = doc.createElement('script'),
+	    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+	    s.type = 'text/javascript';
+	    s.charset = 'utf-8';
+	    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+	    h.insertBefore(s,h.firstChild);
+	  })()
+	</script>
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
@@ -47,6 +60,7 @@
       <div class="container site">
       {{ content }}
       </div>
+      <div id="SOHUCS"></div>
       <footer>
         <div class="container footer">
           <a href="http://www.vxixi.com">羽毛球比赛规则</a><br/>
