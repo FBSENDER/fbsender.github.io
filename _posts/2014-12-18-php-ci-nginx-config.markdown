@@ -59,3 +59,19 @@ $config['uri_protocol'] = 'REQUEST_URI'; #默认值为 AUTO
 ```
 
 这样配置好之后，nginx需要重启一下，然后php route就生效了。
+
+##这样配置的原理
+
+首先要了解nginx try_files是什么作用，详情可以看这个页面 http://stackoverflow.com/questions/17798457/how-can-i-make-this-try-files-directive-work。不禁又要感叹一下，资料还是要看英文的，万能的stackoverflow。
+
+简单来讲，try_files的作用域是server下的location，按照后面给定参数去依次访问，可达就返回结果，否则就报404，当然还可以指定其他的http代码。
+
+我们指定了参数 index.php，那么每一个request就会去尝试访问index.php了。.php文件符合下面一条location规则。
+
+那么有了新的问题，路径参数怎么办呢？下面的配置解决了该问题。
+
+```
+$config['uri_protocol'] = 'REQUEST_URI';
+```
+
+于是，预期的路由生效了，当然访问host:port/index.php/something 也是可以的，seo在想别的办法解决
