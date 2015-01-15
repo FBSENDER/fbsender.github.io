@@ -59,6 +59,25 @@ listen 'localhost'
 ```
 注释掉，然后pg_hba.conf 文件，增加这样一行"host  all all password",这样就可以从外网访问了。
 
+## postgresql 启动失败
+
+启动postgresql的指令：
+
+```bash
+service postgresql start
+```
+
+启动失败，使用debug模式查看具体错误信息：
+
+依据postgresql的安全设置，无法使用root用户执行相关指令
+
+```bash
+-> su postgres
+-> /usr/lib/postgresql/9.1/bin/postgres -d 3 -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+```
+
+之后发现是磁盘已满，清理下磁盘，启动postgresql成功
+
 ## 其他配置及使用说明
 暂时还没实践到...    
 稍后再补充~    
