@@ -21,5 +21,21 @@ rubygem guide 原文链接：http://guides.rubygems.org/run-your-own-gem-server/
 ps aux | grep gem
 ```
 
-没有发现gem server 进程，服务没起。
+没有发现gem server 进程，确认服务没起。
+
+```shell
+gem server --help #查看gem server帮助信息
+```
+
+gem server 命令，默认选项为 --port 8808 --dir /usr/local/lib/ruby/gems/2.2.0 --no-daemon
+
+端口路径都没有问题，我需要gem server在后台以守护进程的形式运行
+
+```shell
+nohup gem server &
+```
+
+需求达成，且当前shell退出后gem server 守护进程不会随之退出。
+
+新的问题来了，如何设置gem server 指令随机器启动而自动启动？
 
