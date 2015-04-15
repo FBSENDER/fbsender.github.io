@@ -39,3 +39,17 @@ nohup gem server &
 
 新的问题来了，如何设置gem server 指令随机器启动而自动启动？
 
+## gem server 开机自动启动
+
+查看了一些配置方式，/etc/init.d + chkconfig 的配置是比较常用的，但是shell script的书写还没练成，看了一下该文件夹下已有的文件，还是算了...
+
+使用crontab来实现该需求。
+
+```shell
+#编辑 crontab
+crontab -e
+#加入下面的一行
+@reboot /usr/local/bin/gem server > ~/gem_server.log 2>&1
+```
+
+暂时我还不可以重启该机器已验证这样配置的有效性，稍后会更新实践情况。
