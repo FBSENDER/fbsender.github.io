@@ -17,13 +17,13 @@ rubygem guide 原文链接：http://guides.rubygems.org/run-your-own-gem-server/
 
 之前该虚拟机不在我的管理下，问题要逐步排查。机器重启，而后gem server端口不通，很有可能gem server 服务没有在自动启动项内，服务没起来，于是相应的端口不通。
 
-```shell
+```bash
 ps aux | grep gem
 ```
 
 没有发现gem server 进程，确认服务没起。
 
-```shell
+```bash
 gem server --help #查看gem server帮助信息
 ```
 
@@ -31,7 +31,7 @@ gem server 命令，默认选项为 --port 8808 --dir /usr/local/lib/ruby/gems/2
 
 端口路径都没有问题，我需要gem server在后台以守护进程的形式运行
 
-```shell
+```bash
 nohup gem server &
 ```
 
@@ -45,7 +45,7 @@ nohup gem server &
 
 使用crontab来实现该需求。
 
-```shell
+```bash
 #编辑 crontab
 crontab -e
 #加入下面的一行
